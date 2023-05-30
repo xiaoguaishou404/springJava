@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fec231fc-aea7-4aa2-bc46-a294839f4ed8" name="变更" comment="init">
-      <change afterPath="$PROJECT_DIR$/spring-01-ioc/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-01-ioc/src/main/java/org/example/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-01-ioc/src/main/java/org/example/dao/UserDaoimpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-01-ioc/src/main/java/org/example/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-01-ioc/src/main/java/org/example/service/UserServiceimpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-01-ioc/src/test/java/MyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="fec231fc-aea7-4aa2-bc46-a294839f4ed8" name="变更" comment="java原始写法 dao层 service层">
+      <change afterPath="$PROJECT_DIR$/spring-01-ioc/src/main/java/org/example/entities/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-01-ioc/src/main/resources/applicationContext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-01-ioc/src/main/java/org/example/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-01-ioc/src/main/java/org/example/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-01-ioc/src/test/java/MyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-01-ioc/src/test/java/MyTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -51,6 +47,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
     "node.js.detected.package.eslint": "true",
@@ -58,8 +55,8 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -104,7 +101,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1685362960693</updated>
-      <workItem from="1685362961929" duration="2109000" />
+      <workItem from="1685362961929" duration="6937000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1685363364330</created>
@@ -113,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685363364330</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="java原始写法 dao层 service层">
+      <created>1685365472793</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1685365472793</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,6 +136,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="java原始写法 dao层 service层" />
+    <option name="LAST_COMMIT_MESSAGE" value="java原始写法 dao层 service层" />
   </component>
 </project>
