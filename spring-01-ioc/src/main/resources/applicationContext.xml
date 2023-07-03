@@ -5,10 +5,94 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
+    <!--    引入bean文件-->
+    <import resource="beans.xml"/>
+
     <!-- A simple bean definition -->
-    <bean id="user" class="org.example.entities.User">
-        <property name="name" value="spring"/>
-    </bean>
+    <!--    property方式通过无参构造器构造 再通过set方法添加属性-->
+<!--    bean name添加id别名-->
+        <bean id="user" class="org.example.entities.User" name="aliasUser">
+            <property name="name" value="spring"/>
+        </bean>
+
+
+    <!--使用ref id引用传入别的实例-->
+    <!--    <bean id="user" class="org.example.entities.User">-->
+    <!--        <property name="name" ref="user2"/>-->
+    <!--    </bean>-->
+
+
+    <!--    实体类构造器有多个参数时  -->
+    <!--    constructor-arg 都是依赖通过构造函数传入的值，并不是set方法-->
+    <!--使用下标进行指定传参-->
+    <!--        <bean id="user" class="org.example.entities.User">-->
+    <!--            <constructor-arg index="0" value="aaa"/>-->
+    <!--            <constructor-arg index="1" ref="user3"/>-->
+    <!--        </bean>-->
+
+    <!--使用类型重载进行传参-->
+    <!--            <bean id="user" class="org.example.entities.User">-->
+    <!--                <constructor-arg type="java.lang.String" value="aaa"/>-->
+    <!--                <constructor-arg type="java.lang.Integer" value="1"/>-->
+    <!--            </bean>-->
+
+
+    <!--              <bean id="user" class="org.example.entities.User">-->
+    <!--                    <constructor-arg name="name" value="aaa"/>-->
+    <!--                    <constructor-arg name="age" value="1"/>-->
+    <!--                </bean>-->
+
+<!--    <bean id="user" class="org.example.entities.User" name="aliasUser">-->
+<!--        &lt;!&ndash; 注入数组类型的值 &ndash;&gt;-->
+<!--        <property name="numbers">-->
+<!--            <array>-->
+<!--                <value>7</value>-->
+<!--                <value>3</value>-->
+<!--                <value>9</value>-->
+<!--            </array>-->
+<!--        </property>-->
+
+<!--        &lt;!&ndash; 注入List类型的值 &ndash;&gt;-->
+<!--        <property name="names">-->
+<!--            <list>-->
+<!--                <value>Tom</value>-->
+<!--                <value>Kate</value>-->
+<!--                <value>Mary</value>-->
+<!--                <value>David</value>-->
+<!--            </list>-->
+<!--        </property>-->
+
+<!--        &lt;!&ndash; 注入Set类型的值 &ndash;&gt;-->
+<!--        <property name="cities">-->
+<!--            <set>-->
+<!--                <value>Hangzhou</value>-->
+<!--                <value>Beijing</value>-->
+<!--                <value>Shanghai</value>-->
+<!--                <value>Guangzhou</value>-->
+<!--                <value>Shenzhen</value>-->
+<!--            </set>-->
+<!--        </property>-->
+<!--        &lt;!&ndash; 注入Map类型的值 &ndash;&gt;-->
+<!--        <property name="session">-->
+<!--            <map>-->
+<!--                <entry key="uid" value="9527"/>-->
+<!--                <entry key="username" value="Jack"/>-->
+<!--                <entry key="password" value="1234"/>-->
+<!--            </map>-->
+<!--        </property>-->
+<!--        &lt;!&ndash;设置null值&ndash;&gt;-->
+<!--        <property name="a">-->
+<!--            <null/>-->
+<!--        </property>-->
+
+<!--        <property name="properties">-->
+<!--            <props>-->
+<!--                <prop key="mail">17896532@123.com</prop>-->
+<!--            </props>-->
+<!--        </property>-->
+
+<!--    </bean>-->
+
 
     <!-- A bean definition with lazy init set on -->
     <!--    <bean id="..." class="..." lazy-init="true">-->
